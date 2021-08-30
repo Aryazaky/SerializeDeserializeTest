@@ -9,7 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 namespace SerializeDeserializeTest
 {
     [Serializable]
-    class Player
+    public class Player
     {
         string name;
         int ID;

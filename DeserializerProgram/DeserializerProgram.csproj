@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D6AA15C-5BBB-4C80-9D88-C90D2BE8B7F8}</ProjectGuid>
+    <ProjectGuid>{1D41A743-28EA-478D-B180-683AED49B941}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UnitTest</RootNamespace>
-    <AssemblyName>UnitTest</AssemblyName>
+    <RootNamespace>DeserializerProgram</RootNamespace>
+    <AssemblyName>DeserializerProgram</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,13 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DeserializerProgram\DeserializerProgram.csproj">
-      <Project>{1d41a743-28ea-478d-b180-683aed49b941}</Project>
-      <Name>DeserializerProgram</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SerializerProject\SerializerProgram.csproj">
-      <Project>{40800cba-6466-4f20-a680-d485159a8221}</Project>
-      <Name>SerializerProgram</Name>
+    <ProjectReference Include="..\SerializeDeserializeTest\SerializeDeserializeTest.csproj">
+      <Project>{56ca1eba-f420-4e0b-b95d-5b997ba50f7a}</Project>
+      <Name>SerializeDeserializeTest</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

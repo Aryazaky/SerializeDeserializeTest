@@ -9,7 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace SerializeDeserializeTest
 {
-    static class Serializer
+    public static class Serializer
     {
         public static void Serialize(string filepath, object obj)
         {
